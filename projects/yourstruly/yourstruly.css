@@ -1,0 +1,164 @@
+.main-header {
+    border-radius: 0;
+}
+
+.landing-container {
+    background-color: #F8F8F8;
+    height: auto;
+    padding: 3rem 5rem;
+    padding-top: 15vh;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
+}
+
+.right-container {
+    p {
+        width: 80%;
+    }
+}
+
+.ui-ux-designer {
+    width: 540px !important;
+}
+
+.left-container {
+    button {
+        margin-top: 2rem;
+        background-color: #d87d7d;
+        border-color: #d87d7d;
+    }
+
+    button:hover {
+        background-color: #d87d7dae;
+    }
+}
+
+.photo-gallery {
+    padding: 5rem 5rem;
+
+    h1 {
+        margin: 0;
+    }
+
+    p {
+        color: #d87d7d;
+        margin: 10px 0
+    }
+
+    .photos-container {
+        display: flex;
+        gap: 16px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        padding: 10px 0;
+    }
+
+    .photos-container::-webkit-scrollbar {
+        height: 8px;           
+    }
+
+    .photos-container::-webkit-scrollbar-thumb {
+        background-color: rgba(0,0,0,0.3);
+        border-radius: 4px;
+    }
+
+    .photos-container::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    #image {
+        flex: 0 0 auto;
+        width: 200px;
+    }
+
+    #image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 12px;
+    }
+
+    #image {
+        width: 30%;
+        height: 15rem;
+        background-color: #cecece;
+    }
+}
+
+.design-process {
+    padding: 3rem 5rem;
+    color: #ffff;
+    font-weight: 200;
+    line-height: 1.7rem;
+}
+
+.video-container {
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    video {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .landing-container {
+        padding: 2rem 0.5rem;
+        text-align: center;
+        display: block;
+
+        .right-container {
+            display: block;
+            width: 100%;
+        }
+
+        p {
+            width: 100%;
+        }
+
+        #landing-greeting {
+            padding-bottom: 0;
+
+            button {
+                order: 1;
+            }
+        }
+    }
+
+    .left-container {
+        button {
+            margin: 0;
+        }
+    }
+
+    .ui-ux-designer {
+        width: 375px !important;
+        order: 2;
+    }
+
+    .photo-gallery {
+        padding: 5rem 1rem;
+        flex-direction: column;
+    }
+
+    .design-process {
+        padding: 1rem 1rem;
+        font-size: 15px;
+        text-align: center;
+
+        p {
+            margin-top: 0 !important;
+        }
+    }
+
+    .video-container {
+        padding: 2rem 1rem;
+
+        video {
+            width: 95%;
+        }
+    }
+}

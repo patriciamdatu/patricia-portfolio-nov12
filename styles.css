@@ -401,6 +401,7 @@ a {
         font-size: 14px;
         font-weight: 300;
         margin-bottom: 25px;
+        line-height: 1rem;
     }
 }
 
@@ -621,6 +622,10 @@ footer {
     
     .flex-1 {
         width: 100%;
+
+        h1 {
+            font-size: 28px;
+        }
     }
 
     .flex-2 {
