@@ -146,3 +146,31 @@ card.forEach(c => {
         });
     });
 });
+
+
+// Create the overlay element
+const popupOverlay = document.createElement('div');
+popupOverlay.classList.add('popup-overlay');
+document.body.appendChild(popupOverlay);
+
+// Add image to overlay
+const popupImg = document.createElement('img');
+popupOverlay.appendChild(popupImg);
+
+// Close popup when clicking overlay
+popupOverlay.addEventListener('click', () => {
+    popupOverlay.style.display = 'none';
+});
+
+// Add click event to all design cards
+const designCards = document.querySelectorAll('.designcards');
+
+designCards.forEach(card => {
+    card.addEventListener('click', () => {
+        const img = card.querySelector('img.popup-image');
+        if (img) {
+            popupImg.src = img.src;
+            popupOverlay.style.display = 'flex';
+        }
+    });
+});
