@@ -27,7 +27,18 @@
     </div>
 
     <section class="landing-container" id="home">
-        <div class="left-container">
+        <video autoplay loop src="./assets/particles-bg.mp4" 
+            style="width: 100vw;
+            height: 100%;
+            z-index: -1;
+            position: absolute;
+            left: 0 !important;
+            opacity: 60%;"
+        ></video>
+        <div class="left-container"
+        style="background-color: #ffffff99;
+        padding: 2rem;
+        border-radius: 30px;">
             <div id="landing-greeting">
                 <div>Hi, I am</div>
                 <div>Patricia M. Datu</div>
@@ -44,7 +55,7 @@
         </div>
 
         <div class="right-container">
-            <img src="./assets/landing-headshot.png" alt="">
+            <!-- <img src="./assets/landing-headshot.png" alt=""> -->
         </div>
     </section>
         
@@ -248,29 +259,25 @@
 
         <div class="card-container">
             <div class="service-card">
-                <div id="icon-placeholder"></div>
-                <img src="" alt="">
+                <img style="width: 125px" src="./assets/video-icon.png" alt="">
                 <h2>Videos</h2>
                 <p>I create engaging videos and motion graphic content that tell stories, capture moments, and elevate your brand across digital platforms.</p>
             </div>
 
             <div class="service-card">
-                <div id="icon-placeholder"></div>
-                <img src="" alt="">
+                <img style="width: 125px" src="./assets/design-icon.png" alt="">
                 <h2>Graphic Design</h2>
                 <p>I design modern, impactful visuals that communicate clearly and stand out across social media, print, and digital spaces.</p>
             </div>
 
             <div class="service-card">
-                <div id="icon-placeholder"></div>
-                <img src="" alt="">
+                <img style="width: 125px" src="./assets/logo-icon.png" alt="">
                 <h2>Logo Design</h2>
                 <p>I craft clean, memorable logos that represent your brand’s identity and work seamlessly across all platforms.</p>
             </div>
 
             <div class="service-card">
-                <div id="icon-placeholder"></div>
-                <img src="" alt="">
+                <img style="width: 125px" src="./assets/website-icon.png" alt="">
                 <h2>Website Design</h2>
                 <p>I build custom, responsive websites from scratch using HTML/CSS, focusing on clean layouts and smooth user experiences.</p>
             </div>
@@ -290,6 +297,14 @@
         </div>
 
     <div class="projects-grid">
+        <div class="project-card Clients Videos" id="project1">
+            <a href="./projects/yourstruly/index.html" target="_blank" class="project-preview">
+                <img src="./images/project1-bg.png" alt="">
+                <h2>YoursTrulyRidz</h2>
+                <p>YoursTrulyRidz specializes in wedding and event content creation—capturing real, candid moments and turning them into polished, share-ready memories.</p>
+            </a>
+        </div>
+
         <div class="project-card Clients Videos" id="project1">
             <a href="./projects/yourstruly/index.html" target="_blank" class="project-preview">
                 <img src="./images/project1-bg.png" alt="">
